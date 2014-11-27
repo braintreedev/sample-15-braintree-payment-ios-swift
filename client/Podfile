@@ -1,0 +1,3 @@
+source 'https://github.com/CocoaPods/Specs.git'
+pod 'AFNetworking', '~> 2.4.0'
+pod 'Braintree', '~> 3.4.0'

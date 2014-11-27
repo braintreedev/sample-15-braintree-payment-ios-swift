@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="vzero" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5R-2l-9fW">
+                                <rect key="frame" x="207" y="276" width="187" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Start Payment">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="payClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hN8-Uh-NaE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6W-ZP-0F9">
+                                <rect key="frame" x="165" y="341" width="271" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="271" id="V8o-Px-ccy"/>
+                                    <constraint firstAttribute="height" constant="21" id="hWF-At-nb7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w5R-2l-9fW" firstAttribute="centerX" secondItem="i6W-ZP-0F9" secondAttribute="centerX" constant="0.5" id="DwJ-qx-mNi"/>
+                            <constraint firstAttribute="centerY" secondItem="w5R-2l-9fW" secondAttribute="centerY" id="Qt2-6v-OVB"/>
+                            <constraint firstAttribute="centerX" secondItem="w5R-2l-9fW" secondAttribute="centerX" id="ShC-vn-C3u"/>
+                            <constraint firstAttribute="centerX" secondItem="i6W-ZP-0F9" secondAttribute="centerX" id="TFW-Ml-Ub2"/>
+                            <constraint firstItem="i6W-ZP-0F9" firstAttribute="top" secondItem="w5R-2l-9fW" secondAttribute="bottom" constant="17" id="Ulp-p1-Gpc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="payButton" destination="w5R-2l-9fW" id="BG3-Y1-oeO"/>
+                        <outlet property="transactionLabel" destination="i6W-ZP-0F9" id="g4f-89-OD9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="410" y="318"/>
+        </scene>
+    </scenes>
+</document>
